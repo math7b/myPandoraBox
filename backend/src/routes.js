@@ -1,9 +1,8 @@
 const express = require('express');
+const AnimeController = require('./controllers/AnimeController');
 
 const routes = express.Router();
 
-routes.get('/', function(request, response) {
-    response.send('Test');
-});
+routes.get('/', AnimeController.index)
 
 module.exports = routes;
