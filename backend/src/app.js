@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors());
-app.use(express(JSON));
+app.use(express.json());
 app.use(routes);
 
 module.exports = app;
