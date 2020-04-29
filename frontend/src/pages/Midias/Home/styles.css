@@ -1,0 +1,18 @@
+.BG {
+    background-image: url("../../../assets/PlanoDeFundo/site_fundo-girl_wolf.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin-bottom: 220px;
+}
+
+.homeTitle {
+    color: #0a0a0a;
+    padding: 130px 0px;
+    margin-left: 7%;
+    font-size: 2vw;
+    margin-right: 20%;
+}

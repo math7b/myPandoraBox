@@ -1,14 +1,21 @@
 import React from 'react';
 
+import Header from '../../Includes/Header';
+import Footer from '../../Includes/Footer';
+
+import './styles.css';
+
 export default function Animes() {
     return (
-        <div>
-            <h3>
-                I'm here! Baaaaka~ S2
-            </h3>
-            <p>
-                This is my home page! from the midias
-            </p>
+        <div className="BG">
+            <Header />
+                <div className="container">
+
+                    <div className="homeTitle">
+                        <h1>Bem vindo~ Desenvolvedor!</h1>
+                    </div>
+                </div>
+            <Footer />
         </div>
     );
 }
