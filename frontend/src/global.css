@@ -10,18 +10,29 @@ b {
 }
 
 p {
-    color: rgb(236, 235, 235);
+    color: rgb(228, 228, 228);
 }
 
-header {
-    background-color: #000000e8;
-    margin-top: 0;
+a {
+    color: #ffffff;
 }
 
 body {
     background-color: #111111;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1vw;
+}
+
+header {
+    background-color: #000000e8;
+    height: 70px;
+    border-bottom: 1px solid darkviolet;
+}
+
+.backgroundImg {
+    background-image: url("./assets/PlanoDeFundo/site_fundo-girl_wolf.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 footer {

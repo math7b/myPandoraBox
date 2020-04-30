@@ -5,15 +5,12 @@ import Footer from '../../Includes/Footer';
 
 import './styles.css';
 
-export default function Animes() {
+export default function Home() {
     return (
-        <div className="BG">
+        <div className="backgroundImg">
             <Header />
-                <div className="container">
-
-                    <div className="homeTitle">
-                        <h1>Bem vindo~ Desenvolvedor!</h1>
-                    </div>
+                <div className="homeTitle">
+                    <h1>Bem vindo~ Desenvolvedor!</h1>
                 </div>
             <Footer />
         </div>

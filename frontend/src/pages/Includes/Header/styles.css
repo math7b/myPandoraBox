@@ -1,0 +1,41 @@
+.logo {
+    float: left;
+    padding: 21px 20px;
+}
+
+.logo .link {
+    text-decoration: none;
+}
+
+.logo .link:hover {
+    border-bottom: 2px solid darkviolet;
+    border-radius: 10px;
+}
+
+.menuHeader {
+    float: right;
+    color: aliceblue;
+}
+
+.menuHeader ul {
+    list-style: none;
+    padding: 26px 17px;
+}
+
+.menuHeader ul li {
+    display: inline;
+}
+
+.menuHeader .link {
+    text-decoration: none;
+    padding: 6px 17px;
+}
+
+.menuHeader .link:hover {
+    background-color: rgba(97, 97, 97, 0.075);
+    border-right: 2px solid darkviolet;
+    border-top: 2px solid darkviolet;
+    border-bottom: 2px solid darkviolet;
+    border-radius: 10px;
+    color: darkviolet;
+}
