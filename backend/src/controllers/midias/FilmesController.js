@@ -2,11 +2,12 @@ const connection = require('../../database/connection');
 
 module.exports = {
     async index(request, response) {
-        const midia = await connection('midia')
+        const midias = await connection('midia')
             .select('*')
-            .where('tipo_midia', 'filme');
+            .where('tipo_midia', 'filme')
+            .orderBy('nome_capa');
 
-        return response.json(midia);
+        return response.json(midias);
     },
 
     async create(request, response) {
@@ -21,7 +22,7 @@ module.exports = {
         return response.json({ midia });
     },
 
-    async change(request, response) {
+    async update(request, response) {
         const { midiaId } = request.params;
         const {
             tipo_midia, tipo_conteudo, nome_completo, nome_capa, img_capa, ano_lancamento, num_episodios, num_temporadas, genero, duracao, faixa_etaria, descri, link_midia, link_amv, link_trailer, link_intru, num_temporada, data_adicao, data_modificacao

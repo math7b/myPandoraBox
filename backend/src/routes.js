@@ -18,8 +18,8 @@ routes.delete('/midias/animes/:midiaId', AnimesController.delete);
 routes.delete('/midias/filmes/:midiaId', FilmesController.delete);
 routes.delete('/midias/series/:midiaId', SeriesController.delete);
 
-routes.post('/midias/animes/:midiaId', AnimesController.change);
-routes.post('/midias/filmes/:midiaId', FilmesController.change);
-routes.post('/midias/series/:midiaId', SeriesController.change);
+routes.post('/midias/animes/:midiaId', AnimesController.update);
+routes.post('/midias/filmes/:midiaId', FilmesController.update);
+routes.post('/midias/series/:midiaId', SeriesController.update);
 
 module.exports = routes;
