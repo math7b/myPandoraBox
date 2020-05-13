@@ -4,12 +4,12 @@
     justify-content: center;
 }
 
-.details .coluna1 {
+.details .groupRight {
     float: right;
     margin-right: 5%;
 }
 
-.details .coluna2 {
+.details .groupLeft {
     float: left;
     width: 60%;
 }
@@ -19,9 +19,10 @@
     height: 340px;
     margin: -70px 0px 30px 20px;
     border-radius: 5px;
+    border: 1px solid darkviolet;
 }
 
-.details .coluna1 .detalhes {
+.details .groupRight .detalhes {
     width: 200px;
     margin: 0px 0px 30px 30px;
     padding: 20px 0px;
@@ -30,17 +31,19 @@
     border-radius: 12px;
 }
 
-.details .coluna2 .descricao {
+.details .groupLeft .descricao {
     padding: 33px 0px;
     border-bottom: 5px solid black;
     border-radius: 15px;
     text-align: justify;
 }
 
-.details .coluna2 .descricao h3 {
+.details .groupLeft .descricao h3 {
     margin-bottom: 12px;
 }
 
-.details .coluna2 .descricao p {
-    
+.details .groupLeft .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

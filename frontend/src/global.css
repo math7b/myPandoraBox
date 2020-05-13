@@ -46,6 +46,19 @@ header {
     justify-content: center;
 }
 
+button {
+    margin: 5px 5px 5px 5px;
+    border-radius: 7px;
+    background-color: rgb(37, 37, 37);
+    color: #ffffff;
+    border: 1px solid black;
+    padding: 7px 17px;
+}
+
+button:hover {
+    color: darkviolet;
+}
+
 footer {
     background-color: #000000;
     width: 100%;

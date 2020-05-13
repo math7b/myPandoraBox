@@ -11,6 +11,7 @@ export default function Home() {
             <Header />
                 <div className="homeTitle">
                     <h1>Bem vindo~ Desenvolvedor!</h1>
+                    <img src={require(`../../../assets/gift.gif`)} />
                 </div>
             <Footer />
         </div>

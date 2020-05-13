@@ -25,7 +25,7 @@ export default function Details() {
                 {details.map(detail => (
                     <div key={detail.midiaId}>
                         <div className="details">
-                            <div className="coluna1">
+                            <div className="groupRight">
                                 <img src={require(`../../../../assets/Midias/Animes/${detail.img_capa}`)} />
                                 <div className="detalhes">
                                     <p><b>Ep: </b>{detail.num_episodios}</p>
@@ -38,10 +38,21 @@ export default function Details() {
                                     <p><b>Data de modificaçao: </b><br />{detail.data_modificacao}</p>
                                 </div>
                             </div>
-                            <div className="coluna2">
+                            <div className="groupLeft">
                                 <div className="descricao">
                                     <h3><b>{detail.nome_completo}</b></h3>
                                     <p>{detail.descri}</p>
+                                </div>
+                                <div className="links">
+                                    <a href={detail.link_midia}>
+                                        <button>Ir para o anime?</button>
+                                    </a>
+                                    <a href={detail.link_intru}>
+                                        <button>Ir para a intru?</button>
+                                    </a>
+                                    <a href={detail.link_amv}>
+                                        <button>Ir para o amv?</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
