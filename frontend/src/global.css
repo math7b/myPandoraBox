@@ -35,6 +35,17 @@ header {
     background-repeat: no-repeat;
 }
 
+.container {
+    background-color: rgba(0, 0, 0, 0.63);
+    margin: 150px 4% 21% 7%;
+    border: 1px solid darkviolet;
+    border-radius: 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 footer {
     background-color: #000000;
     width: 100%;
