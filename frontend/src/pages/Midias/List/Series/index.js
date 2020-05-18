@@ -6,14 +6,14 @@ import Footer from '../../../Includes/Footer';
 
 import api from '../../../../services/api';
 
-export default function Animes() {
+export default function Series() {
     const [midias, setMidias] = useState([]);
 
     useEffect(() => {
-        api.get('midias/animes').then(response => {
+        api.get('/midias/series').then(response => {
             setMidias(response.data);
         })
-    }, [])
+    })
 
     return (
         <div className="backgroundImg">
@@ -22,11 +22,9 @@ export default function Animes() {
                 {midias.map(midia => (
                     <div key={midia.midiaId}>
                         <div className="midia">
-                            <Link to={`../midia/details/anime/${midia.midiaId}`}>
+                            <Link to={`../midia/details/serie/${midia.midiaId}`}>
                                 <img src={
-                                    require(
-                                        `../../../../assets/Midias/Animes/${midia.img_capa}`
-                                    )
+                                    require(`../../../../assets/Midias/Series/${midia.img_capa}`)
                                 } alt="img" />
                                 <div className="info">
                                     <p>{midia.ano_lancamento}</p>

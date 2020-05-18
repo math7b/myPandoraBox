@@ -4,28 +4,39 @@ import { Link } from 'react-router-dom';
 import './styles.css';
 
 export default function Header() {
+    const url = window.location.pathname;
+
+    let home;
+
+    if (url !== '/midias/home') {
+        home = (<li><Link to={'/midias/home'}>Home</Link></li>)
+    }
+
     return (
-        <header>
+        <header id="topo">
             <div className="logo">
                 <h2>
                     <b>
-                        <Link className="link" to="/midias/home">
+                        <Link to="/midias/home">
                             Yuki Katashy
                         </Link>
                     </b>
                 </h2>
             </div>
-            <div className="menuHeader">
+            <div className="header">
                 <ul>
                     <li>
-                        <Link className="link" to="/midias/animes">
-                            Animes
-                        </Link>
+                        <Link to={'/midias/filmes'}>Filmes</Link>
                     </li>
                     <li>
-                        <Link className="link" to="#">
-                            Hiragy7 (sair)
-                        </Link>
+                        <Link to={'/midias/series'}>Séries</Link>
+                    </li>
+                    <li>
+                        <Link to={'/midias/animes'}>Animes</Link>
+                    </li>
+                    {home}
+                    <li>
+                        <Link to={'#'}>Hiragy7 (sair)</Link>
                     </li>
                 </ul>
             </div>

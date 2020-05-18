@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Header from '../../../Includes/Header';
 import Footer from '../../../Includes/Footer';
 
 import api from '../../../../services/api';
 
-export default function AnimeDetails() {
+export default function FilmeDetails() {
     const [details, setDetails] = useState([]);
     
     const url = window.location.pathname;
     const midiaId = url.substring(url.lastIndexOf('/') + 1);
     
     useEffect(() => {
-        api.get(`midia/Details/${midiaId}`).then(response => {
+        api.get(`midia/details/${midiaId}`).then(response => {
             setDetails(response.data);
         })
     })
@@ -26,19 +26,17 @@ export default function AnimeDetails() {
                         <div className="details">
                             <div className="groupRight">
                                 <img src={
-                                    require(`../../../../assets/Midias/Animes/${detail.img_capa}`)
-                                } alt="img" />
+                                    require(`../../../../assets/Midias/Filmes/${detail.img_capa}`)
+                                } alt="img"/>
                                 <div className="detalhes">
                                     <h4>
                                         <p><b>Nome: </b>{detail.nome_capa}</p><br/>
-                                        <p><b>Ep: </b>{detail.num_episodios}</p>
-                                        <p><b>Temporadas: </b>{detail.num_temporadas}</p>
-                                        <p><b>Temporada: </b>{detail.num_temporada}</p>
+                                        <p><b>Ano: </b>{detail.ano_lancamento}</p>
+                                        <p><b>Idade Recomendada: </b><br/>{detail.faixa_etaria}</p>
                                         <p><b>Duração: </b>{detail.duracao}</p>
-                                        <p><b>Lançado: </b>{detail.ano_lancamento}</p><br />
-                                        <p><b>Gêneros: </b><br />{detail.genero}</p><br />
-                                        <p><b>Data de adição: </b><br />{detail.data_adicao}</p>
-                                        <p><b>Data de modificaçao: </b><br />{detail.data_modificacao}</p>
+                                        <p><b>Gêneros: </b><br/>{detail.duracao}</p><br/>
+                                        <p><b>Data de adição: </b><br/>{detail.data_adicao}</p>
+                                        <p><b>Data de modificação: </b><br/>{detail.data_modificacao}</p>
                                     </h4>
                                 </div>
                             </div>
@@ -49,13 +47,10 @@ export default function AnimeDetails() {
                                 </div>
                                 <div className="links">
                                     <a href={detail.link_midia}>
-                                        <button>Ir para o anime?</button>
+                                        <button>Ir para o filme?</button>
                                     </a>
-                                    <a href={detail.link_intru}>
-                                        <button>Ir para a intru?</button>
-                                    </a>
-                                    <a href={detail.link_amv}>
-                                        <button>Ir para o amv?</button>
+                                    <a href={detail.link_trailer}>
+                                        <button>Ir para o trailer?</button>
                                     </a>
                                 </div>
                             </div>

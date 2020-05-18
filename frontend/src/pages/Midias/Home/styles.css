@@ -5,3 +5,36 @@
     margin-left: 7%;
     font-size: 2vw;
 }
+
+.homeMidia {
+    background-image: url("../../../assets/PlanoDeFundo/site_fundo-demon_slayer.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-top: 5px solid black;
+}
+
+.homeMidia .menu {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.homeMidia .menu ul {
+    list-style: none;
+    padding: 26px 17px;
+}
+
+.homeMidia .menu ul li {
+    display: inline;
+
+}
+
+.homeMidia .menu ul li a {
+    text-decoration: none;
+    padding: 6px 17px;
+}
+
+.homeMidia .menu a:hover {
+    border-top: 5px solid #ffffff;
+    border-radius: 10px;
+}

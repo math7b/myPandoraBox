@@ -6,32 +6,30 @@ import Footer from '../../../Includes/Footer';
 
 import api from '../../../../services/api';
 
-export default function Animes() {
-    const [midias, setMidias] = useState([]);
+export default function Filmes() {
+    const [midia, setMidia] = useState([]);
 
     useEffect(() => {
-        api.get('midias/animes').then(response => {
-            setMidias(response.data);
+        api.get('midias/filmes').then(response => {
+            setMidia(response.data);
         })
-    }, [])
+    });
 
     return (
         <div className="backgroundImg">
             <Header />
             <div className="container">
-                {midias.map(midia => (
+                {midia.map(midia => (
                     <div key={midia.midiaId}>
                         <div className="midia">
-                            <Link to={`../midia/details/anime/${midia.midiaId}`}>
+                            <Link to={`../midia/details/filme/${midia.midiaId}`}>
                                 <img src={
-                                    require(
-                                        `../../../../assets/Midias/Animes/${midia.img_capa}`
-                                    )
+                                    require(`../../../../assets/Midias/Filmes/${midia.img_capa}`)
                                 } alt="img" />
                                 <div className="info">
+                                    <p>{midia.duracao}</p>
                                     <p>{midia.ano_lancamento}</p>
-                                    <p>{midia.num_episodios}</p>
-                                    <p>{midia.num_temporada}</p>
+                                    <p>{midia.faixa_etaria}</p>
                                 </div>
                                 <div className="nomeCapa">
                                     <p>{midia.nome_capa}</p>

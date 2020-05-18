@@ -3,35 +3,35 @@
     padding: 21px 20px;
 }
 
-.logo .link {
+.logo a {
     text-decoration: none;
 }
 
-.logo .link:hover {
+.logo a:hover {
     border-bottom: 2px solid darkviolet;
     border-radius: 10px;
 }
 
-.menuHeader {
+.header {
     float: right;
     color: aliceblue;
 }
 
-.menuHeader ul {
+.header ul {
     list-style: none;
     padding: 26px 17px;
 }
 
-.menuHeader ul li {
+.header ul li {
     display: inline;
 }
 
-.menuHeader .link {
+.header a {
     text-decoration: none;
     padding: 6px 17px;
 }
 
-.menuHeader .link:hover {
+.header a:hover {
     background-color: rgba(97, 97, 97, 0.075);
     border-right: 2px solid darkviolet;
     border-top: 2px solid darkviolet;
