@@ -17,6 +17,16 @@ export default function FilmeDetails() {
         })
     })
 
+    let dataModificacao, data_modificacao;
+
+    details.map(detail => (
+        data_modificacao = detail.data_modificacao
+    ));
+
+    if (data_modificacao != null) {
+        dataModificacao = (<p><b>Data de modificação: </b><br/>{data_modificacao}</p>)
+    }
+
     return (
         <div className="backgroundImg">
             <Header />
@@ -36,7 +46,7 @@ export default function FilmeDetails() {
                                         <p><b>Duração: </b>{detail.duracao}</p>
                                         <p><b>Gêneros: </b><br/>{detail.duracao}</p><br/>
                                         <p><b>Data de adição: </b><br/>{detail.data_adicao}</p>
-                                        <p><b>Data de modificação: </b><br/>{detail.data_modificacao}</p>
+                                        {dataModificacao}
                                     </h4>
                                 </div>
                             </div>

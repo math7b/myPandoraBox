@@ -17,6 +17,18 @@ export default function SerieDetails() {
         })
     })
 
+    let dataModificacao, data_modificacao;
+
+    details.map(detail => (
+        data_modificacao = detail.data_modificacao
+    ))
+
+    if (data_modificacao != null) {
+        dataModificacao = (<p><b>Data de modificação: </b><br/>{data_modificacao}</p>);
+    } else {
+        dataModificacao = null
+    }
+
     return (
         <div className="backgroundImg">
             <Header />
@@ -30,15 +42,15 @@ export default function SerieDetails() {
                                 } alt="img"/>
                                 <div className="detalhes">
                                     <h4>
-                                        <p><b>Nome: </b>{detail.nome_capa}</p>
-                                        <p><b>Idade recomendada: </b><br/>{detail.faixa_etaria}</p>
+                                        <p><b>Nome: </b>{detail.nome_capa}</p><br/>
+                                        <p><b>Idade recomendada: </b><br/>{detail.faixa_etaria}</p><br/>
                                         <p><b>Ep: </b>{detail.num_episodios}</p>
                                         <p><b>Tepodaradas: </b>{detail.num_teporadas}</p>
                                         <p><b>Temporada: </b>{detail.num_temporada}</p>
                                         <p><b>Duração: </b>{detail.duracao}</p>
-                                        <p><b>Lançado: </b>{detail.ano_lancamento}</p>
-                                        <p><b>Data de adição: </b>{detail.data_adicao}</p>
-                                        <p><b>Data de modificação: </b>{detail.data_modificacao}</p>
+                                        <p><b>Lançado: </b>{detail.ano_lancamento}</p><br/>
+                                        <p><b>Data de adição: </b><br/>{detail.data_adicao}</p>
+                                        {dataModificacao}
                                     </h4>
                                 </div>
                             </div>

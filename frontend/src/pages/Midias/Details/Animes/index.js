@@ -17,6 +17,18 @@ export default function AnimeDetails() {
         })
     })
 
+    let dataModificacao, data_modificacao;
+
+    details.map(detail => (
+        data_modificacao = detail.data_modificacao
+    ));
+
+    if (data_modificacao != null) {
+        dataModificacao = (<p><b>Data de modificaçao: </b><br />{data_modificacao}</p>);
+    } else {
+        dataModificacao = null;
+    }
+
     return (
         <div className="backgroundImg">
             <Header />
@@ -38,7 +50,7 @@ export default function AnimeDetails() {
                                         <p><b>Lançado: </b>{detail.ano_lancamento}</p><br />
                                         <p><b>Gêneros: </b><br />{detail.genero}</p><br />
                                         <p><b>Data de adição: </b><br />{detail.data_adicao}</p>
-                                        <p><b>Data de modificaçao: </b><br />{detail.data_modificacao}</p>
+                                        {dataModificacao}
                                     </h4>
                                 </div>
                             </div>
