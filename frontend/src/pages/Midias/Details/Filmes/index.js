@@ -51,7 +51,7 @@ export default function FilmeDetails() {
                                 </div>
                             </div>
                             <div className="groupLeft">
-                                <div className="descricao">
+                                <div className="descri">
                                     <h3><b>{detail.nome_completo}</b></h3>
                                     <p>{detail.descri}</p>
                                 </div>
