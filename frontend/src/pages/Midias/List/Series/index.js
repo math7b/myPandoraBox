@@ -6,6 +6,8 @@ import Footer from '../../../Includes/Footer';
 
 import api from '../../../../services/api';
 
+import '../styles.css';
+
 export default function Series() {
     const [midias, setMidias] = useState([]);
 
@@ -18,7 +20,7 @@ export default function Series() {
     return (
         <div className="backgroundImg">
             <Header />
-            <div className="container">
+            <div className="midiaContainer">
                 {midias.map(midia => (
                     <div key={midia.midiaId}>
                         <div className="midia">

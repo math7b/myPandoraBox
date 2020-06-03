@@ -5,6 +5,7 @@
 
 .logo a {
     text-decoration: none;
+    transition: border 300ms;
 }
 
 .logo a:hover {
@@ -29,13 +30,14 @@
 .header a {
     text-decoration: none;
     padding: 6px 17px;
+    transition: border 300ms;
 }
 
 .header a:hover {
     background-color: rgba(97, 97, 97, 0.075);
+    color: darkviolet;
     border-right: 2px solid darkviolet;
     border-top: 2px solid darkviolet;
     border-bottom: 2px solid darkviolet;
     border-radius: 10px;
-    color: darkviolet;
 }

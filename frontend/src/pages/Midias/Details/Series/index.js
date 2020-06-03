@@ -5,6 +5,8 @@ import Footer from '../../../Includes/Footer';
 
 import api from '../../../../services/api';
 
+import '../styles.css';
+
 export default function SerieDetails() {
     const [details, setDetails] = useState([]);
     
@@ -32,7 +34,7 @@ export default function SerieDetails() {
     return (
         <div className="backgroundImg">
             <Header />
-            <div className="container">
+            <div className="midiaContainer">
                 {details.map(detail => (
                     <div key={detail.midiaId}>
                         <div className="details">
