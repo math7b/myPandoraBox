@@ -1,5 +1,6 @@
 const express = require('express');
 
+const SessionController = require('./controllers/SessionController');
 const AnimesController = require('./controllers/midias/AnimesController');
 const FilmesController = require('./controllers/midias/FilmesController');
 const SeriesController = require('./controllers/midias/SeriesController');
@@ -7,6 +8,9 @@ const DeleteMidiaController = require('./controllers/midias/DeleteMidiaControlle
 const DetailsMidiaController = require('./controllers/midias/DetailsMidiaController.js');
 
 const routes = express.Router();
+
+routes.post('/session/logar', SessionController.logar);
+routes.post('/session/cadastrar', SessionController.cadastrar);
 
 routes.delete('/midias/delete/:midiaId', DeleteMidiaController.index);
 

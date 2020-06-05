@@ -18,7 +18,7 @@ export default function Header() {
                 <h2>
                     <b>
                         <Link to="/midias/home">
-                            Yuki Katashy
+                            Pandora Box
                         </Link>
                     </b>
                 </h2>
