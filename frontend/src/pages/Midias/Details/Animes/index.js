@@ -9,10 +9,10 @@ import '../styles.css';
 
 export default function AnimeDetails() {
     const [details, setDetails] = useState([]);
-    
+
     const url = window.location.pathname;
     const midiaId = url.substring(url.lastIndexOf('/') + 1);
-    
+
     useEffect(() => {
         api.get(`midia/Details/${midiaId}`).then(response => {
             setDetails(response.data);
@@ -44,7 +44,8 @@ export default function AnimeDetails() {
                                 } alt="img" />
                                 <div className="detalhes">
                                     <h4>
-                                        <p><b>Nome: </b>{detail.nome_capa}</p><br/>
+                                        <p><b>Nome: </b>{detail.nome_capa}</p><br />
+                                        <p><b>Recomendado: </b>{detail.faixa_etaria}</p><br />
                                         <p><b>Ep: </b>{detail.num_episodios}</p>
                                         <p><b>Temporadas: </b>{detail.num_temporadas}</p>
                                         <p><b>Temporada: </b>{detail.num_temporada}</p>

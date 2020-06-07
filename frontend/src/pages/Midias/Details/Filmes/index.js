@@ -44,7 +44,7 @@ export default function FilmeDetails() {
                                     <h4>
                                         <p><b>Nome: </b>{detail.nome_capa}</p><br/>
                                         <p><b>Ano: </b>{detail.ano_lancamento}</p>
-                                        <p><b>Idade Recomendada: </b><br/>{detail.faixa_etaria}</p>
+                                        <p><b>Idade: </b><br/>{detail.faixa_etaria}</p>
                                         <p><b>Duração: </b>{detail.duracao}</p>
                                         <p><b>Gêneros: </b><br/>{detail.duracao}</p><br/>
                                         <p><b>Data de adição: </b><br/>{detail.data_adicao}</p>

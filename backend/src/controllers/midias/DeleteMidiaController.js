@@ -6,7 +6,7 @@ module.exports = {
         
         const midia = await connection('midia')
             .where('midiaId', midiaId)
-            .select('nome_completo', 'nome_capa', 'midiaId')
+            .select('nome_capa')
             .first();
 
         await connection('midia')

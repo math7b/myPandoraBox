@@ -67,12 +67,3 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
 }
-
-footer {
-    background-color: #000000;
-    width: 100%;
-    padding: 50px 0px;
-    text-align: center;
-    height: 150px;
-    border-top: 5px solid darkviolet;
-}

@@ -45,7 +45,7 @@ export default function SerieDetails() {
                                 <div className="detalhes">
                                     <h4>
                                         <p><b>Nome: </b>{detail.nome_capa}</p><br/>
-                                        <p><b>Idade recomendada: </b><br/>{detail.faixa_etaria}</p><br/>
+                                        <p><b>Idade: </b><br/>{detail.faixa_etaria}</p><br/>
                                         <p><b>Ep: </b>{detail.num_episodios}</p>
                                         <p><b>Tepodaradas: </b>{detail.num_teporadas}</p>
                                         <p><b>Temporada: </b>{detail.num_temporada}</p>
