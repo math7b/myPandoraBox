@@ -1,10 +1,8 @@
-/* 
---------------------------------------------------------------------------------------------------------------------
+/* ------------------------------------------------------------------------------------------------------------------
     FAVOR MANTER ESTE CSS ORGANIZADO! 
---------------------------------------------------------------------------------------------------------------------
-*/
+------------------------------------------------------------------------------------------------------------------ */
 
-/* Gerais ------------------------------------------------------------------------------------------------------- */
+/* Gerais -------------------------------------------------------------------------------------------------------- */
 
 * {
     margin: 0;
@@ -31,13 +29,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: #000000e8;
-    height: 70px;
-    border-bottom: 1px solid darkviolet;
-}
-
-button {
+button, .button {
     margin: 5px 5px 5px 5px;
     border-radius: 7px;
     background-color: rgb(37, 37, 37);
@@ -45,9 +37,10 @@ button {
     border: 1px solid black;
     padding: 7px 17px;
     transition: 300ms;
+    text-decoration: none;
 }
 
-button:hover {
+button:hover, .button:hover {
     color: darkviolet;
 }
 
@@ -66,4 +59,45 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+/* Forms --------------------------------------------------------------------------------------------------------- */
+
+.logon {
+    background-color: rgba(0, 0, 0, 0.788);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logon form input {
+    display: block;
+    margin: 10px 0px;
+    width: 60vw;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.logon form label p {
+    background-color: #343a40;
+    margin: 0px 0px 20px 10px;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 75%;
+}
+
+.logon form .formButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.logon form .formButtons a {
+    margin-top: -20px;
 }

@@ -38,7 +38,7 @@ export default function AnimeDetails() {
                 {details.map(detail => (
                     <div key={detail.midiaId}>
                         <div className="details">
-                            <div className="groupRight">
+                            <div className="groupLeft">
                                 <img src={
                                     require(`../../../../assets/Midias/Animes/${detail.img_capa}`)
                                 } alt="img" />
@@ -57,7 +57,7 @@ export default function AnimeDetails() {
                                     </h4>
                                 </div>
                             </div>
-                            <div className="groupLeft">
+                            <div className="groupRight">
                                 <div className="descri">
                                     <h3><b>{detail.nome_completo}</b></h3>
                                     <p>{detail.descri}</p>

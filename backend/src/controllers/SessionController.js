@@ -3,27 +3,26 @@ const crypto = require('crypto');
 
 module.exports = {
     async logar(request, response) {
-        const { user_name, adm_name, senha } = request.body;
-        let _status, _statusData, _adm_name, _senha;
-
+        const { usuario, senha } = request.body;
+        let _status, _statusData, _senha, _adm;
         function CryptarSha256(data) {
-            let date = crypto.createHmac("sha256", "password")
+            let _data = crypto.createHmac("sha256", "password")
                 .update(data)
                 .digest("hex");
-            return date;
+            return _data;
         };
-
-        if ((user_name && adm_name && senha) != null) {
+        if ((usuario && senha) != "") {
             _senha = CryptarSha256(senha);
-            _adm_name = CryptarSha256(adm_name);
 
             _statusData = await connection("usuarios")
                 .select("*")
-                .where('user_name', user_name)
+                .where('usuario', usuario)
                 .andWhere('senha', _senha)
                 .first();
-
             if (_statusData != null) {
+                if (usuario === 'Hiragy7') {
+                    _adm = true;
+                }
                 _status = 3;
             } else {
                 _status = 2;
@@ -31,44 +30,35 @@ module.exports = {
         } else {
             _status = 1;
         }
-
-    return response.json({ _status, /*user_name, adm_name, senha, _adm_name, _senha, _statusData*/ })
+        return response.json({ _status, _adm /*, usuario, senha, _senha, _statusData*/ })
     },
-    async cadastrar(request, response) {
-        const { user_name, adm_name, senha } = request.body;
-        let _status, _adm_name, _senha;
 
+    async cadastrar(request, response) {
+        const { usuario, senha } = request.body;
+        let _status, _senha;
         function CryptarSha256(data) {
-            let date = crypto.createHmac("sha256", "password")
+            let _data = crypto.createHmac("sha256", "password")
                 .update(data)
                 .digest("hex");
-            return date;
+            return _data;
         };
-
-        if (adm_name != '') {
-            _adm_name = CryptarSha256(adm_name);
-        }
-        if ((user_name && senha) != '') {
+        if ((usuario && senha) != '') {
             _senha = CryptarSha256(senha);
-
             let _usuario = await connection("usuarios")
                 .select('*')
-                .where('user_name', user_name)
+                .where('usuario', usuario)
                 .first();
-
             if (_usuario == null) {
-                await connection('usuarios')
-                    .insert({ user_name: user_name, adm_name: _adm_name, senha: _senha });
                 _status = 3;
+                await connection('usuarios')
+                    .insert({ usuario: usuario, senha: _senha });
+
             } else {
                 _status = 2;
             }
-
         } else {
             _status = 1;
         }
-
-        return response.json({ _status, /*user_name, senha, adm_name, _adm_name, _senha,*/ })
-
+        return response.json({ _status /*, usuario, senha, _senha,*/ })
     }
 }

@@ -1,9 +1,14 @@
 .homeTitle {
-    margin-bottom: 220px;
-    color: #0a0a0a;
-    padding: 130px 0px;
-    margin-left: 7%;
+    background-color: rgba(0, 0, 0, 0.459);
     font-size: 2vw;
+    margin: 120px 5% 270px 5%;
+    display: table;
+    border-radius: 5px;
+}
+
+.homeTitle h1 {
+    color: #ffffff;
+    margin: 0px 4px;
 }
 
 .homeMidia {
@@ -26,7 +31,6 @@
 
 .homeMidia .menu ul li {
     display: inline;
-
 }
 
 .homeMidia .menu ul li a {

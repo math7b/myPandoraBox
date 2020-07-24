@@ -13,7 +13,7 @@ export default function Header() {
     }
 
     return (
-        <header id="topo">
+        <header>
             <div className="logo">
                 <h2>
                     <b>
@@ -23,23 +23,21 @@ export default function Header() {
                     </b>
                 </h2>
             </div>
-            <div className="header">
-                <ul>
-                    <li>
-                        <Link to={'/midias/filmes'}>Filmes</Link>
-                    </li>
-                    <li>
-                        <Link to={'/midias/series'}>Séries</Link>
-                    </li>
-                    <li>
-                        <Link to={'/midias/animes'}>Animes</Link>
-                    </li>
-                    {home}
-                    <li>
-                        <Link to={'#'}>Hiragy7 (sair)</Link>
-                    </li>
-                </ul>
-            </div>
+            <ul>
+                <li>
+                    <Link to={'/midias/filmes'}>Filmes</Link>
+                </li>
+                <li>
+                    <Link to={'/midias/series'}>Séries</Link>
+                </li>
+                <li>
+                    <Link to={'/midias/animes'}>Animes</Link>
+                </li>
+                {home}
+                <li>
+                    <Link to={'#'}>Hiragy7 (sair)</Link>
+                </li>
+            </ul>
         </header>
     );
 }

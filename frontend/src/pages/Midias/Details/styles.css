@@ -4,17 +4,17 @@
     justify-content: center;
 }
 
-.details .groupRight {
-    float: right;
+.details .groupLeft {
+    float: left;
     margin-right: 5%;
 }
 
-.details .groupLeft {
-    float: left;
+.details .groupRight {
+    float: right;
     width: 60%;
 }
 
-.details img {
+.details .groupLeft img {
     width: 220px;
     height: 340px;
     margin: -70px 0px 30px 20px;
@@ -22,7 +22,7 @@
     border: 1px solid darkviolet;
 }
 
-.details .groupRight .detalhes {
+.details .groupLeft .detalhes {
     width: 200px;
     margin: 0px 0px 30px 30px;
     border-top: 5px solid black;
@@ -30,11 +30,11 @@
     border-radius: 12px;
 }
 
-.details .groupRight .detalhes h4 {
+.details .groupLeft .detalhes h4 {
     padding: 10px 15px;
 }
 
-.details .groupLeft .descri {
+.details .groupRight .descri {
     padding: 33px 0px;
     border-bottom: 5px solid black;
     border-radius: 15px;
@@ -42,11 +42,11 @@
     margin-bottom: 10px;
 }
 
-.details .groupLeft .descri h3 {
+.details .groupRight .descri h3 {
     margin-bottom: 12px;
 }
 
-.details .groupLeft .links {
+.details .groupRight .links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

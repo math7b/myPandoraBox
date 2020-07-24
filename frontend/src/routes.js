@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+import Slash from './pages/Slash';
+import Logar from './pages/Logar';
+import Cadastrar from './pages/Cadastrar';
 import Home from './pages/Midias/Home';
 import Animes from './pages/Midias/List/Animes';
 import Filmes from './pages/Midias/List/FIlmes';
@@ -13,6 +16,9 @@ export default function Routes() {
     return (
         <BrowserRouter>
             <Switch>
+                <Route path="/" exact component={Slash} />
+                <Route path="/logar" component={Logar} />
+                <Route path="/cadastrar" component={Cadastrar} />
                 <Route path="/midias/home" component={Home} />
                 <Route path="/midias/animes" component={Animes} />
                 <Route path="/midias/filmes" component={Filmes} />

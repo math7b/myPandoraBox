@@ -1,39 +1,41 @@
-.logo {
-    float: left;
-    padding: 21px 20px;
+header {
+    background-color: #000000e8;
+    color: aliceblue;
+    width: 100%;
+    display: table;
+    border-bottom: 1px solid darkviolet;
+    font-size: 1.4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo a {
+header .logo a {
     text-decoration: none;
     transition: border 300ms;
 }
 
-.logo a:hover {
+header .logo a:hover {
     border-bottom: 2px solid darkviolet;
     border-radius: 10px;
 }
 
-.header {
-    float: right;
-    color: aliceblue;
-}
-
-.header ul {
+header ul {
     list-style: none;
     padding: 26px 17px;
 }
 
-.header ul li {
+header ul li {
     display: inline;
 }
 
-.header a {
+header a {
     text-decoration: none;
     padding: 6px 17px;
     transition: border 300ms;
 }
 
-.header a:hover {
+header a:hover {
     background-color: rgba(97, 97, 97, 0.075);
     color: darkviolet;
     border-right: 2px solid darkviolet;
