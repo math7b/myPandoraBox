@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 05-Jun-2020 às 03:02
+-- Tempo de geração: 26-Jul-2020 às 23:07
 -- Versão do servidor: 10.4.11-MariaDB
 -- versão do PHP: 7.4.1
 
@@ -100,7 +100,7 @@ INSERT INTO `midia` (`midiaId`, `tipo_midia`, `tipo_conteudo`, `nome_completo`, 
 (14, 'filme', 'anime', 'Fate/kaleid liner Prismaâ˜†Illya Movie: Sekka no Chikai', 'Fate/kaleid', 'fate_kaleid.jpg', 2017, 0, 0, 'AÃ§Ã£o, Fantasia, Magia', '1h e 30m', '14', 'A destruiÃ§Ã£o do mundo progride. A Ãºnica coisa que pode para-la Ã© o sacrifÃ­cio de Miyu. Quando Ainsworth pergunta a Illya o que ela irÃ¡ salvar entre o mundo e Miyu, ela escolhe a resposta simples e egoÃ­sta, â€œambosâ€. Em um refÃºgio, todos descansam na casa que Miyu e Shirou cuidaram. Quando eles se reÃºnem em um cÃ­rculo, Shirou conta a eles sobre si mesmo e Miyu. Ela era a Filha de Deus que concederia todos e quaisquer desejos. Shirou levou a garota que nÃ£o tinha mais ninguÃ©m para a casa que ele tinha compartilhado com Kiritsugu. Foram cinco anos desde entÃ£o, e eles viveram pacificamente como irmÃ£os. Mas essa pacÃ­fica vida cotidiana foi agora quebrada. Eles vÃ£o levÃ¡-la de volta, mas antes disso, Julian faz sua apariÃ§Ã£o, ainda procurando em Miyu o milagre que ele precisa.', 'https://www.myotakulist.com/anime-info/fate-kaleid-liner-prisma-illya-movie-sekka-no-chikai', '', 'https://www.youtube.com/watch?v=yearbVtszKA', NULL, NULL, '2019-12-24', NULL),
 (15, 'filme', 'filme', 'Pacific Rim', 'CÃ­rculo de Fogo', 'circulo_de_fogo.jpg', 2013, NULL, NULL, 'AÃ§Ã£o/FicÃ§Ã£o cientÃ­fica', '2h ev12m', '16', 'Pacific Rim|Quando vÃ¡rias criaturas monstruosas, os Kaiju, comeÃ§am a emergir do mar, tem inÃ­cio uma batalha entre estes seres e os humanos. Para combatÃª-los, a humanidade desenvolve uma sÃ©rie de robÃ´s gigantescos, os Jaegers, cada um controlado por duas pessoas por meio de uma conexÃ£o neural. Entretanto, mesmo os Jaegers se mostram insuficientes para derrotar os Kaiju. Diante deste cenÃ¡rio, a Ãºltima esperanÃ§a Ã© um velho robÃ´, que passa a ser comandado por um antigo piloto e uma pessoa em treinamento.', 'https://www.google.com/search?q=circulo+de+fogo&oq=circulo+de+fogo&aqs=chrome..69i57j0l5.4102j0j7&sourceid=chrome&ie=UTF-8', NULL, 'https://www.youtube.com/watch?v=KZnv9QUQDSM', NULL, NULL, '2019-12-24', NULL),
 (16, 'filme', 'anime', 'Hello World', 'Hello World', 'hello_world.jpg', 2019, NULL, NULL, 'Sci-Fi, Animation', 'Desconheci', 'L', 'A histÃ³ria do filme se passa no ano de 2027, em Kyoto. Naomi Katagaki, um estudante comum, encontra um homem que diz ser ele 10 anos no futuro, e que estÃ¡ ali para ajudÃ¡-lo a salvar a garota pela qual irÃ¡ se apaixonar em 3 meses. Em meio a essa estranha situaÃ§Ã£o, o aparente fim do mundo surge para deixar as coisas ainda mais complicadas.( Ainda nÃ£o foi lanÃ§ado, por isso nÃ£o hÃ¡ um link para o filme. )', '#', NULL, 'https://www.youtube.com/watch?v=shoWFRnNoWw', NULL, NULL, '2019-12-24', NULL),
-(17, 'serie', '', 'Love O2O', 'Love O2O', 'love_020.jpg', 2016, 11, 1, '', '(+ou-) 50 min', '10', 'Ã‰ um drama cheio de romance, fofinho e adorÃ¡vel. A temÃ¡tica me interessou bastante jÃ¡ que o drama trata de um casal que se conhece atravÃ©s de um jogo online (RPG). E pra ficar mais interessante ainda, o plot do romance Ã© bem real, sabe? NÃ£o tem aquelas situaÃ§Ãµes dramÃ¡ticas, tristes e as reviravoltas que estamos acostumados nos doramas, posso dizer que Ã© um romance simples, normal e lindo.', 'https://www.netflix.com/title/81005091', '', 'https://www.youtube.com/watch?v=tiiN4rDwa8g', '', '1', '2019-12-24', NULL),
+(17, 'serie', '', 'Love 020', 'Love O2O', 'love_020.jpg', 2016, 11, 1, '', '(+ou-) 50 min', '10', 'Ã‰ um drama cheio de romance, fofinho e adorÃ¡vel. A temÃ¡tica me interessou bastante jÃ¡ que o drama trata de um casal que se conhece atravÃ©s de um jogo online (RPG). E pra ficar mais interessante ainda, o plot do romance Ã© bem real, sabe? NÃ£o tem aquelas situaÃ§Ãµes dramÃ¡ticas, tristes e as reviravoltas que estamos acostumados nos doramas, posso dizer que Ã© um romance simples, normal e lindo.', 'https://www.netflix.com/title/81005091', '', 'https://www.youtube.com/watch?v=tiiN4rDwa8g', '', '1', '2019-12-24', NULL),
 (38, 'anime', '', 'Wotaku ni Koi wa Muzukashii', 'WotaKoi ', 'wotakoi.jpg', 2018, 11, 1, 'Comedy, Romance, Slice of Life', '(+ou-) 24 minutos', '', 'A série foca em quatro programadores de uma empresa, que acabam formando dois casais. São todos nerds/otakus, cada um com um vício diferente, de mangás a jogos.', 'https://www.google.com/search?q=WotaKoi+animes+onlines&oq=WotaKoi+animes+onlines&aqs=chrome..69i57j35i39j0l4.3372j0j7&sourceid=chrome&ie=UTF-8', 'https://www.youtube.com/watch?v=2MW0LP0iy0c', '', 'https://www.youtube.com/watch?v=oZCBpYTP1tE', '1', '2019-12-24', '2020-02-10'),
 (40, 'anime', '', 'Sword Art Online: Alicization', 'S.A.O. Alicization', 'sword_art_online_alicization.jpg', 2019, 24, 4, 'Action, Game, Adventure, Romance, Fantasy', '(+ou-) 24 minutos', '', 'Onde… estou eu? Quando deu por si, Kirito havia entrado de cabeça em um épico mundo virtual cheio de fantasia. Com apenas vagas memórias do que havia acontecido antes de logar no jogo, ele começa a andar a esmo em busca de pistas. Sob uma enorme árvore negra, ele encontra um garoto. ‘Meu nome é Eugeo. Muito prazer, Kirito.’ Apesar de aparentar ser um morador do mundo virtual – um NPC – o garoto demonstra as mesmas emoções de um ser humano. Kirito e Eugeo viram amigos, e saem em busca de uma maneira de sair do mundo. É então que emerge uma certa memória, entranhada em seu ser. Ele lembra de sua infância, e de correr pelas montanhas com Eugeo… Uma lembrança que ele nunca poderia ter tido. E nessa lembrança, ele vê mais alguém: uma jovem loira. Ela se chama Alice, e este é um nome que ele nunca deve esquecer.', 'https://www.google.com/search?sxsrf=ACYBGNS_BaJ2CndrpJ0kGdAVH6x1axmc9A%3A1573359582526&ei=3o_HXfzpH9W05OUP66mSmAU&q=SAO+alicization+animes+online&oq=SAO+alicization+animes+online&gs_l=psy-ab.3..35i39.1684.3918..4251...0.2..0.264.1922.1j11j2......0....1..g', 'https://www.youtube.com/watch?v=kbaxS6C1gSk', '', 'https://www.youtube.com/watch?v=kBUkTavYOjY', '3', '2019-12-24', '2020-02-10'),
 (41, 'anime', '', 'Sword Art Online: Alicization - War of Underworld', 'S.A.O. War of Underwolrd', 'sword_art_online_alicization_war_of_underworld.jpg', 2019, 12, 4, 'Action, Game, Adventure, Romance, Fantasy', '(+ou-) 24 minutos', '', 'Segunda parte de Sword Art Online: Alicization', 'https://www.google.com/search?sxsrf=ACYBGNQL1v-LaUYFH7zZcjo4Q9FizscKDw%3A1577201621294&ei=1S8CXurGEeHZ5OUPveOX2Ac&q=sword+art+online+war+of+underworld+animes+online&oq=sword+art+online+war+of+underworld+animes+online&gs_l=psy-ab.3...2109.4078..5408...0.0.', 'https://www.youtube.com/watch?v=F91Zuwxx-vM', '', 'https://www.youtube.com/watch?v=tlZ20pwDmCE', '4', '2019-12-24', '2020-02-10'),
@@ -141,20 +141,17 @@ INSERT INTO `pendentes` (`pendenteId`, `FK_midiaId`, `FK_usuarioId`) VALUES
 
 CREATE TABLE `usuarios` (
   `usuarioId` int(11) NOT NULL,
-  `user_name` varchar(100) COLLATE utf8_bin NOT NULL,
-  `senha` varchar(64) COLLATE utf8_bin NOT NULL,
-  `adm_name` varchar(100) COLLATE utf8_bin NOT NULL
+  `usuario` varchar(100) COLLATE utf8_bin NOT NULL,
+  `senha` varchar(64) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`usuarioId`, `user_name`, `senha`, `adm_name`) VALUES
-(1, 'Hiragy7', 'cda6d5a452dcefa8551f1284fad0bcc6d686a8942841f32dd50263a78c0daa9e', ''),
-(64, 'a', 'c1e2ee6783cf00ef6121511e4c2c7aae25fc25499222562cd02dc8767046461f', ''),
-(65, 'b', 'c1e2ee6783cf00ef6121511e4c2c7aae25fc25499222562cd02dc8767046461f', ''),
-(66, 'c', 'c1e2ee6783cf00ef6121511e4c2c7aae25fc25499222562cd02dc8767046461f', 'c1e2ee6783cf00ef6121511e4c2c7aae25fc25499222562cd02dc8767046461f');
+INSERT INTO `usuarios` (`usuarioId`, `usuario`, `senha`) VALUES
+(1, 'Hiragy7', 'cda6d5a452dcefa8551f1284fad0bcc6d686a8942841f32dd50263a78c0daa9e'),
+(76, 'd', 'cc20c2670ff1c0984b75e2827b0c60660096f0e609a51c128422af6a63944ceb');
 
 --
 -- Índices para tabelas despejadas
@@ -187,7 +184,7 @@ ALTER TABLE `pendentes`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`usuarioId`),
-  ADD UNIQUE KEY `usuario` (`user_name`);
+  ADD UNIQUE KEY `usuario` (`usuario`);
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
@@ -203,7 +200,7 @@ ALTER TABLE `favoritos`
 -- AUTO_INCREMENT de tabela `midia`
 --
 ALTER TABLE `midia`
-  MODIFY `midiaId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `midiaId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT de tabela `pendentes`
@@ -215,7 +212,7 @@ ALTER TABLE `pendentes`
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `usuarioId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+  MODIFY `usuarioId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
 -- Restrições para despejos de tabelas

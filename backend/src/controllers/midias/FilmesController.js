@@ -12,9 +12,9 @@ module.exports = {
 
     async create(request, response) {
         const {
-            tipo_midia, tipo_conteudo, nome_completo, nome_capa, img_capa, ano_lancamento, duracao, faixa_etaria, descri, link_midia, link_trailer, data_adicao, data_modificacao
+            tipo_conteudo, nome_completo, nome_capa, img_capa, ano_lancamento, duracao, faixa_etaria, descri, link_midia, link_trailer, data_adicao, data_modificacao
         } = request.body;
-
+        tipo_midia = 'filme';
         const midia = await connection('midia').insert({
             tipo_midia, tipo_conteudo, nome_completo, nome_capa, img_capa, ano_lancamento, duracao, faixa_etaria, descri, link_midia, link_trailer, data_adicao, data_modificacao
         });
@@ -25,7 +25,7 @@ module.exports = {
     async update(request, response) {
         const { midiaId } = request.params;
         const {
-            tipo_midia, tipo_conteudo, nome_completo, nome_capa, img_capa, ano_lancamento, duracao, faixa_etaria, descri, link_midia, link_trailer, data_adicao, data_modificacao
+            tipo_conteudo, nome_completo, nome_capa, img_capa, ano_lancamento, duracao, faixa_etaria, descri, link_midia, link_trailer, data_adicao, data_modificacao
         } = request.body;
 
         const midia = await connection('midia')
@@ -37,7 +37,6 @@ module.exports = {
         await connection('midia')
             .where({ midiaId: midiaId })
             .update({
-                tipo_midia: tipo_midia,
                 tipo_conteudo: tipo_conteudo,
                 nome_completo: nome_completo,
                 nome_capa: nome_capa,

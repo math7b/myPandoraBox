@@ -7,12 +7,25 @@ import Footer from '../../Includes/Footer';
 import './styles.css';
 
 export default function Home() {
+    function ValidaUsuario() {
+        const usuario = localStorage.getItem('usuario');
+        const ADM = localStorage.getItem('ADM');
+        let Mensagem;
+        if (usuario === 'Hiragy7' && (ADM === 'true')) {
+            Mensagem = 'Bem vindo~ Desenvolvedor!';
+        } else {
+            Mensagem = `Bem vindo~ ${usuario}`;
+        }
+        return Mensagem;
+    }
+    const Mensagem = ValidaUsuario();
+
     return (
         <div className="backgroundImg">
             <Header />
             <div className="home">
                 <div className="homeTitle">
-                    <h1>Bem vindo~ Desenvolvedor!</h1>
+                    <h1>{Mensagem}</h1>
                 </div>
             </div>
             {/* <div id="menuMidia" className="homeMidia">

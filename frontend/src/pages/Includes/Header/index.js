@@ -1,13 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import { Link, useHistory } from 'react-router-dom';
 import './styles.css';
 
 export default function Header() {
+    const usuario = localStorage.getItem('usuario');
+    const history = useHistory();
+
+    function logout() {
+        localStorage.clear();
+        history.push('/');
+    }
+
     const url = window.location.pathname;
-
+    console.log(url);
     let home;
-
     if (url !== '/midias/home') {
         home = (<li><Link to={'/midias/home'}>Home</Link></li>)
     }
@@ -35,7 +41,7 @@ export default function Header() {
                 </li>
                 {home}
                 <li>
-                    <Link to={'#'}>Hiragy7 (sair)</Link>
+                    <Link onClick={logout} to={'#'}>{usuario} (sair)</Link>
                 </li>
             </ul>
         </header>
